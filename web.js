@@ -9,8 +9,8 @@ app.get('/', function(request, response) {
    if (err) throw err;
    var buffer = new Buffer(data);
    console.log(buffer.toString('utf8'));
-   response.send(buffer.toString('utf8'));
    });
+   response.send(buffer.toString('utf8'));
 });
 
 var port = process.env.PORT || 5000;
